@@ -484,6 +484,9 @@ WindowButtonApplet.prototype = {
 				let t = _(this.titleDesktopText.toString());
 				this.button["title"].get_child().set_text("  " + t.toString());
 			}
+		} else {
+				let t = _(this.titleDesktopText.toString());
+				this.button["title"].get_child().set_text("  " + t.toString());
 		}
 	},
 
