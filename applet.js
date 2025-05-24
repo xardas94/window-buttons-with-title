@@ -182,9 +182,6 @@ WindowButtonApplet.prototype = {
 		this.actor.add(this.button["title"]);
 		// this.updateWindowTitle();
 		this.button["title"].connect("button-press-event", Lang.bind(this, function(actor, event) {
-			if (this.button["title"].opacity == 0) {
-				return false;
-			}
 			let button = event.get_button();
 			if (button == 1) {
 				if (this.titleButtonAction == 1) {
@@ -244,9 +241,6 @@ WindowButtonApplet.prototype = {
 		this.actor.add(this.button["icon"]);
 
 		this.button["icon"].connect("button-press-event", Lang.bind(this, function(actor, event) {
-			if (this.button["icon"].opacity == 0) {
-				return false;
-			}
 			let button = event.get_button();
 
 			if (button == 1) {
@@ -327,9 +321,6 @@ WindowButtonApplet.prototype = {
 	},
 
 	minimizeWindow: function() {
-		if (this.button["minimize"].opacity == 0) {
-			return false;
-		}
 		let activeWindow = global.display.focus_window;
 		let tracker = Cinnamon.WindowTracker.get_default();
 		let app = tracker.get_window_app(activeWindow);
@@ -379,9 +370,6 @@ WindowButtonApplet.prototype = {
 	},
 
 	maximizeWindow: function() {
-		if (this.button["maximize"].opacity == 0) {
-			return false;
-		}
 		let activeWindow = global.display.focus_window;
 		if (activeWindow) {
 			let tracker = Cinnamon.WindowTracker.get_default();
@@ -435,9 +423,6 @@ WindowButtonApplet.prototype = {
 	},
 
 	closeWindow: function() {
-		if (this.button["close"].opacity == 0) {
-			return false;
-		}
 		let activeWindow = global.display.focus_window;
 		let tracker = Cinnamon.WindowTracker.get_default();
 		let app = tracker.get_window_app(activeWindow);
@@ -548,7 +533,6 @@ WindowButtonApplet.prototype = {
 		} else {
 			for (let i = 0; i < buttons.length; ++i) {
 				this.button[buttons[i]].show();
-				this.button[buttons[i]].opacity = 255;
 			}
 		}
 	},
@@ -635,15 +619,11 @@ WindowButtonApplet.prototype = {
 		let buttons = this.buttons_style.split(":");
 		if (app && w.get_maximized()) {
 			for (let i = 0; i < buttons.length; ++i) {
-				//              this.button[buttons[i]].show();
-				this.button[buttons[i]].opacity = 255;
+				this.button[buttons[i]].show();
 			}
 		} else {
 			for (let i = 0; i < buttons.length; ++i) {
-				//              this.button[buttons[i]].hide();
-				if (buttons[i] != "icon") {
-					this.button[buttons[i]].opacity = 0;
-				}
+				this.button[buttons[i]].hide();
 			}
 		}
 	},
