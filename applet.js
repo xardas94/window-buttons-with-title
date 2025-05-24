@@ -587,23 +587,27 @@ WindowButtonApplet.prototype = {
 			// if active window is Desktop
 			return true;
 		} else {
-			current_window.raise();
-			Mainloop.idle_add(function() {
-				let pointer = Gdk.Display.get_default().get_device_manager().get_client_pointer(),
-					[scr, ] = pointer.get_position(),
-					rect = current_window.get_outer_rect(),
-					x = rect.x + rect.width / 2,
-					y = rect.y;
-				//
-				/*if (!current_window.get_maximized()) {
-				 */
-				pointer.warp(scr, x, y);
-				// }
-				global.display.begin_grab_op(global.screen, current_window,
-					Meta.GrabOp.MOVING, false, true, 0, 0,
-					global.get_current_time(), x, y);
-				return false;
+
+			//based on _grabAction from /usr/share/cinnamon/js/ui/windowMenu.js
+			let grabOp = Meta.GrabOp.KEYBOARD_MOVING;
+			let time = global.get_current_time();
+			if (global.display.get_grab_op() == Meta.GrabOp.NONE) {
+				current_window.begin_grab_op(grabOp, true, time);
+				return;
+			}
+
+			let waitId = 0;
+			let id = global.display.connect('grab-op-end', display => {
+				display.disconnect(id);
+				GLib.source_remove(waitId);
+				current_window.begin_grab_op(grabOp, true, time);
 			});
+
+			waitId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, 100, () => {
+				global.display.disconnect(id);
+				return GLib.SOURCE_REMOVE;
+			});
+
 			return true;
 		}
 		return true;
