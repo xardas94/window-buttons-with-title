@@ -1,7 +1,11 @@
 {
-  "max-instances": "2",
-  "description": "You can control windows with this applet",
   "uuid": "window-buttons-with-title@xardas",
   "name": "Window Buttons with Title",
-  "version": "0.1.0"
+  "description": "You can control windows with this applet",
+  "version": "0.1.0",
+  "max-instances": "2",
+  "multiversion": true,
+  "cinnamon-version": [
+    "6.0"
+  ]
 }
