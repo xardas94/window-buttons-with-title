@@ -41,7 +41,7 @@ const GLib = imports.gi.GLib;
 const Gdk = imports.gi.Gdk;
 const GnomeSession = imports.misc.gnomeSession;
 const Gettext = imports.gettext;
-const UUID = "window-buttons-with-title2@hanspr";
+const UUID = "window-buttons-with-title@xardas";
 
 Gettext.bindtextdomain(UUID, GLib.get_home_dir() + "/.local/share/locale")
 
@@ -60,7 +60,7 @@ WindowButtonApplet.prototype = {
 		this.instance_id = instance_id;
 		this.appletPath = metadata.path;
 		try {
-			this.settings = new Settings.AppletSettings(this, "window-buttons-with-title2@hanspr", this.instance_id);
+			this.settings = new Settings.AppletSettings(this, UUID, this.instance_id);
 
 			this.settings.bind("title-button-action", "titleButtonAction", this.on_settings_changed);
 			this.settings.bind("title-width-option", "titleWidthOption", this.on_settings_changed);
