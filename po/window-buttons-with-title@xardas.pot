@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# # xardas, 2025
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: window-buttons-with-title@xardas 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-applets/"
+"issues\n"
+"POT-Creation-Date: 2025-07-12 16:26+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 6.0/applet.js:304
+msgid "Minimize"
+msgstr ""
+
+#: 6.0/applet.js:352 6.0/applet.js:451
+msgid "Maximize"
+msgstr ""
+
+#: 6.0/applet.js:404
+msgid "Close"
+msgstr ""
+
+#: 6.0/applet.js:449
+msgid "Restore"
+msgstr ""
+
+#. metadata.json->description
+msgid "You can control windows with this applet"
+msgstr ""
+
+#. metadata.json->name
+msgid "Window Buttons with Title"
+msgstr ""
+
+#. 6.0->settings-schema.json->head->description
+msgid "Window Buttons Settings"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-style->description
+msgid "Window Buttons Style  (Example: title:minimize:maximize:close:icon)"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->description
+msgid "Buttons Theme  (Needs Restart Cinnamon)"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Default"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Adapta"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Ambiance"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Ambiance-Blue"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Mac-OS-X"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Mint-X"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Radiance"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "UniMetro"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "UniMetro-Black"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Zukitwo"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Zukitwo-Dark"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->options
+msgid "Vimix"
+msgstr ""
+
+#. 6.0->settings-schema.json->buttons-theme->tooltip
+msgid "Please select a theme for window buttons"
+msgstr ""
+
+#. 6.0->settings-schema.json->on-desktop-shutdown->description
+msgid "On desktop show shutdown menu when click close button"
+msgstr ""
+
+#. 6.0->settings-schema.json->text-mode->description
+msgid "Text-Mode"
+msgstr ""
+
+#. 6.0->settings-schema.json->only-maximized->description
+msgid ""
+"Show applet (active buttons-title-icon on this instance) only active window "
+"maximized"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-desktop-text->description
+msgid "Desktop title button text"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-nowindow-text->description
+msgid "No active window title button text"
+msgstr ""
+
+#. 6.0->settings-schema.json->cinnamon-maximus-button->description
+msgid "For Maximus option, please install cinnamon-maximus extension"
+msgstr ""
+
+#. 6.0->settings-schema.json->head2->description
+msgid "Title and Icon Settings"
+msgstr ""
+
+#. 6.0->settings-schema.json->icon-button-action->description
+msgid "Icon Left Button Action"
+msgstr ""
+
+#. 6.0->settings-schema.json->icon-button-action->options
+#. 6.0->settings-schema.json->icon-middle-button-action->options
+#. 6.0->settings-schema.json->title-button-action->options
+#. 6.0->settings-schema.json->title-middle-button-action->options
+msgid "Nothing"
+msgstr ""
+
+#. 6.0->settings-schema.json->icon-button-action->options
+#. 6.0->settings-schema.json->icon-middle-button-action->options
+#. 6.0->settings-schema.json->title-button-action->options
+#. 6.0->settings-schema.json->title-middle-button-action->options
+msgid "Scale"
+msgstr ""
+
+#. 6.0->settings-schema.json->icon-button-action->options
+#. 6.0->settings-schema.json->icon-middle-button-action->options
+#. 6.0->settings-schema.json->title-button-action->options
+#. 6.0->settings-schema.json->title-middle-button-action->options
+msgid "Expo"
+msgstr ""
+
+#. 6.0->settings-schema.json->icon-button-action->options
+#. 6.0->settings-schema.json->icon-middle-button-action->options
+#. 6.0->settings-schema.json->title-button-action->options
+#. 6.0->settings-schema.json->title-middle-button-action->options
+msgid "Show Desktop"
+msgstr ""
+
+#. 6.0->settings-schema.json->icon-button-action->options
+#. 6.0->settings-schema.json->icon-middle-button-action->options
+#. 6.0->settings-schema.json->title-button-action->options
+#. 6.0->settings-schema.json->title-middle-button-action->options
+msgid "Move Window"
+msgstr ""
+
+#. 6.0->settings-schema.json->icon-middle-button-action->description
+msgid "Icon Middle Button Action"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-button-action->description
+msgid "Title Left Button Action"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-button-action->options
+msgid "Maximize Windows"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-middle-button-action->description
+msgid "Title Middle Button Action"
+msgstr ""
+
+#. 6.0->settings-schema.json->show-panels->description
+msgid "Show panels when expo and scale are active"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-width-option->description
+msgid "Title Width Option:"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-width-option->options
+msgid "width:"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-width-option->options
+msgid "max-width:"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-width->units
+#. 6.0->settings-schema.json->title-icon-width->units
+#. 6.0->settings-schema.json->title-font-size->units
+msgid "pixels"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-width->description
+msgid "Title width:"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-icon-width->description
+msgid "Title icon width:"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-icon-width->tooltip
+msgid "Please be careful"
+msgstr ""
+
+#. 6.0->settings-schema.json->head3->description
+msgid "Font Settings"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-font->description
+msgid "Text font (empty for default theme font)"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-font-color->description
+msgid "Text color (empty for default theme color)"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-font-style->description
+msgid "Font style"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-font-style->options
+msgid "Normal"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-font-style->options
+msgid "Italic"
+msgstr ""
+
+#. 6.0->settings-schema.json->title-font-size->description
+msgid "Text Size (0 for theme default):"
+msgstr ""
